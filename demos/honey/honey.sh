@@ -77,17 +77,19 @@ for (( i = 0 ; i <= 10000 ; i += 100 )) ; do
 	
 done
 	
-# convert the density field into atomic coordinates
 if [[ -e honey-10000.n ]] ; then
+
+	# convert the density field into atomic coordinates
 	java -jar coordinator.jar honey-10000.n honey-10000.xyz 7.26 2.46
+
+	# create a style file to color the atoms based on their bond angles
+	java -jar colorizer.jar honey-10000.xyz honey-10000.sty 0.5 0.15
+
+	# create a POV-Ray script based on the coordinates
+	java -jar pover.jar honey.par
+
+	# render using POV-Ray (latter with transparency (if specified by the user))
+	povray +ihoney-10000.pov +ohoney-10000-pov.png +w1000 +h1000 -d
+	#povray +ihoney-10000.pov +ohoney-10000-pov.png +w1000 +h1000 -d +ua
+
 fi
-
-# create a style file to color the atoms based on their bond angles
-java -jar colorizer.jar honey-10000.xyz honey-10000.sty 0.5 0.15
-
-# create a POV-Ray script based on the coordinates
-java -jar pover.jar honey.par
-
-# render using POV-Ray (latter with transparency (if specified by the user))
-povray +ihoney-10000.pov +ohoney-10000-pov.png +w1000 +h1000 -d
-#povray +ihoney-10000.pov +ohoney-10000-pov.png +w1000 +h1000 -d +ua
