@@ -1,0 +1,2 @@
+# for a demo, run: ./hetero.sh
+# requires Java, MPI, FFTW3

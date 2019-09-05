@@ -1,0 +1,123 @@
+# an input file for pfc-init.jar
+# for instructions, run: java -jar pfc-init.jar
+
+# system dimensions and discretization
+D
+
+#	Nx		Ny		dx		dy
+	512		512		0.7		0.7
+
+# Voronoi grains
+V	10
+
+
+#	x		y		type
+	173.174	252.155	0
+	
+#	sym		a		nave	amp		namp	
+	6		7.2552	0.66	0.0		0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		150.487	0.0		0.0		0.0		0.0
+
+
+#	x		y		type
+	262.565	189.181	0
+	
+#	sym		a		nave	amp		namp	
+	6		7.2552	0.66	0.0		0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		280.869	0.0		0.0		0.0		0.0
+
+
+#	x		y		type
+	189.433	195.483	0
+	
+#	sym		a		nave	amp		namp	
+	6		7.2552	0.66	0.0		0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		109.178	0.0		0.0		0.0		0.0
+
+
+#	x		y		type
+	183.422	109.088	0
+	
+#	sym		a		nave	amp		namp	
+	6		7.2552	0.66	0.0		0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		214.594	0.0		0.0		0.0		0.0
+
+
+#	x		y		type
+	157.924	104.086	0
+	
+#	sym		a		nave	amp		namp	
+	6		7.2552	0.66	0.0		0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		4.48658	0.0		0.0		0.0		0.0
+
+
+#	x		y		type
+	283.674	39.718	0
+	
+#	sym		a		nave	amp		namp	
+	3		7.2552	0.31	-1.0	0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		94.1102	0.0		0.0		0.0		0.0
+
+
+#	x		y		type
+	7.85441	296.342	0
+	
+#	sym		a		nave	amp		namp	
+	3		7.2552	0.31	-1.0	0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		169.041	0.0		0.0		0.0		0.0
+
+
+#	x		y		type
+	237.943	156.396	0
+	
+#	sym		a		nave	amp		namp	
+	3		7.2552	0.31	-1.0	0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		37.6864	0.0		0.0		0.0		0.0
+
+
+#	x		y		type
+	316.331	247.728	0
+	
+#	sym		a		nave	amp		namp	
+	3		7.2552	0.31	-1.0	0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		216.745	0.0		0.0		0.0		0.0
+
+
+#	x		y		type
+	267.606	2.47376	0
+	
+#	sym		a		nave	amp		namp	
+	3		7.2552	0.31	-1.0	0.0
+	
+#	tx1		ty1		theta	xr		yr		tx2		ty2
+	0.0		0.0		216.745	0.0		0.0		0.0		0.0
+
+# transform
+T
+
+#	nave	famp
+	0.485	1.0
+
+# output
+O
+
+#	filename	precision
+	hetero.n0	6

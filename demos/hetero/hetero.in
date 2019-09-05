@@ -1,0 +1,67 @@
+# input file for pfc-relax
+# for instructions, run: mpirun -np 1 pfc-relax
+# also see honey.in
+
+# alternative
+I	hetero.n0	hetero.n1	hetero.n2
+	hetero-#.n0	hetero-#.n1	hetero-#.n2
+	100	[	0	100	1000	10000	100000	]	12	6
+
+# model parameters (see pfc-relax.c)
+#	U
+M	3
+
+#	lambda
+l	0.0
+	0.0
+	0.0
+
+#	alpha (diagonal: alpha_ii, off-diagonal: alpha_ij*)
+a	-1.4	-0.04	-0.04
+			-0.3	0.5
+					-0.3
+
+#	beta (*)
+b	2.25	0.0		0.0
+			1.0		0.02
+					1.0
+
+#	gamma (*)
+g	0.0		0.0		0.0
+			0.0		0.3
+					0.0
+
+#	delta
+d	2.25
+	1.0
+	1.0
+
+#	epsilon (only off-diagonal couplings)
+e			-0.8	-0.8
+					0.0
+
+#	sigma
+s	0.2
+
+#	1/nu
+n	1.0
+	1.018
+	1.018
+
+#	omega
+o	1.0
+	1.0
+	1.0
+
+#	phi
+p	0.0
+	0.0
+	0.0
+
+#	1/mu (only off-diagonal couplings)
+m			0.0		0.0
+					1.018
+
+# relaxation
+#	c	tend	dx		dy		dt		Topt	xopt	yopt
+R	1	10000	0.7		0.7		0.25	0		1		1
