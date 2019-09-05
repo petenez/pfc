@@ -1,0 +1,34 @@
+# parameter file for colorizer.jar
+# for instructions, run: java -jar colorizer.jar
+
+# input file
+I honey-10000.xyz
+
+# output file
+O honey-10000.pov
+
+# camera position (x y z)
+C 60.7 60.699 300.0
+
+# "look at" point (x y z)
+P 60.7 60.7 0.0
+
+# light sources (x y z red green blue)
+L 60.7 60.7 10000.0 1.0 1.0 1.0
+
+# background color (red green blue transparency)
+B 1.0 1.0 1.0 0.0
+
+# view angle (degrees)
+A 0.0
+
+# styles for atom types (type atom_radius bond_radius red green blue transparency)
+#S C 0.5 0.15 0.0 1.0 1.0 0.0
+#S B 0.5 0.15 1.0 0.0 1.0 0.0
+#S N 0.5 0.15 1.0 1.0 0.0 0.0
+
+# specify the style for all unspecified atom types
+#S * 0.5 0.15 0.0 0.0 0.0 0.0
+
+# style file
+F honey-10000.sty

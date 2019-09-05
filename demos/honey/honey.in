@@ -1,0 +1,57 @@
+# an input file for pfc-relax
+# for instructions, run: mpicc -np 1 pfc-relax
+
+# input and output
+## input density files
+## output density files, optional free energy density file
+## print interval, data write steps, print precision, data write precision
+I	honey.n
+	honey-#.n	honey-#.f
+	1000	[	0	100	1000	10000	]	12	6
+	
+# alternative with data write interval
+#I	honey.n
+#	honey-#.n	honey-#.f
+#	1000	1000	12	6
+
+# model parameters (see pfc-relax.c)
+#	U
+M	1
+
+#	lambda
+l	0.0
+
+#	alpha
+a	-0.15
+
+#	beta
+b	1.0
+
+#	gamma
+g	0.8
+
+#	delta
+d	1.0
+
+#	epsilon
+e	
+
+#	sigma
+s	0.2
+
+#	1/nu (note reciprocal units*)
+n	1.0
+
+#	omega
+o	1.0
+
+#	phi
+p	0.0
+
+#	1/mu (*)
+m	
+
+# relaxation
+## conserved dynamics? (0: no, else: yes**), # of steps, discretization, system size optimization interval, applied in x/y direction (**)
+#	c	tend	dx		dy		dt		Topt	xopt	yopt
+R	0	10000	0.7		0.7		0.5		0		1		1
